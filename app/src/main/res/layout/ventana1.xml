@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="30dp"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Busqueda por Código"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/estilotext"
+        android:drawableStart="@drawable/key"
+        android:drawablePadding="5dp"
+        android:hint="Ingrese el código"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:paddingLeft="25dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="100dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="-5"
+        android:shadowDy="-5"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="0dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:text="Buscar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#FF0000"
+            android:text="X"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:background="@drawable/circulo1"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

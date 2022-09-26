@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fjar.app_crudsqlite.MainActivity">
+    <item
+        android:id="@+id/Limpiar"
+        android:orderInCategory="100"
+        android:title="@string/itemLimpiar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listaArticulos"
+        android:orderInCategory="100"
+        android:title="@string/Spinner"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listaArticulos1"
+        android:orderInCategory="100"
+        android:title="@string/ListView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listRecyclerView"
+        android:orderInCategory="100"
+        android:title="RecyclerView"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ListViewCat"
+        android:orderInCategory="100"
+        android:title="ListView Categorias"
+        app:showAsAction="never" />
+
+</menu>
