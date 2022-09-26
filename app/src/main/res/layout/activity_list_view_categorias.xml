@@ -10,7 +10,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="#E01515"
+    android:background="#00E5FF"
     android:orientation="vertical">
 
     <TextView
@@ -39,13 +39,13 @@
         android:layout_height="3dp"/>
 
 </LinearLayout>
+
     <ListView
         android:id="@+id/listViewPersonas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:layout_marginBottom="35dp"
-        />
+        android:layout_marginBottom="35dp" />
 
 
 </RelativeLayout>

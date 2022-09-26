@@ -29,7 +29,7 @@ public class ConexionSQLite extends SQLiteOpenHelper {
     ArrayList<DtoCategoria> categoriaList;
 
 
-    public ConexionSQLite(Context context) {super(context, "administracion.db", null, 3);
+    public ConexionSQLite(Context context) {super(context, "administracion.db", null, 5);
     }
     @Override
     public void onOpen(SQLiteDatabase db) {
@@ -56,7 +56,7 @@ public class ConexionSQLite extends SQLiteOpenHelper {
         db.execSQL("create table articulos (codigo integer(11) not null primary key, descripcion varchar(100) not null, precio real not null, idcategoria integer(11) not null, FOREIGN KEY(idcategoria) REFERENCES tb_categorias(idcategoria))");
 
         //Almacenamiento de 3 categorias para efectos de prueba y ejemplo.
-        db.execSQL("insert into tb_categorias values(1, 'Smartphone', 1, datetime('now','localtime')), (2, 'Tablets', 1, datetime('now','localtime')), (3, 'Computadora', 1, datetime('now','localtime')) ");
+        db.execSQL("insert into tb_categorias values(1, 'Smartphone', 1, datetime('now','localtime')), (2, 'Tablets', 1, datetime('now','localtime')), (3, 'Computadora', 1, datetime('now','localtime')), (4, 'Muebles', 1, datetime('now','localtime')), (5, 'Electrodomesticos', 1, datetime('now','localtime')) ");
 
         /*
         db.execSQL("insert into categoria values(1, 'Electrodomesticos', 1, datetime('now','localtime'))");
@@ -64,9 +64,6 @@ public class ConexionSQLite extends SQLiteOpenHelper {
         db.execSQL("insert into categoria values(3, 'Celulares', 1, datetime('now','localtime'))");
         db.execSQL("insert into categoria values(4, 'Computadoras', 1, datetime('now','localtime'))");
         db.execSQL("insert into categoria values(5, 'Lamparas', 1, datetime('now','localtime'))");
-        db.execSQL("insert into categoria values(6, 'Audio', 1, datetime('now','localtime'))");
-        db.execSQL("insert into categoria values(7, 'Monitores', 1, datetime('now','localtime'))");
-        db.execSQL("insert into categoria values(8, 'Laptops', 1, datetime('now','localtime'))");
         */
     }
 
